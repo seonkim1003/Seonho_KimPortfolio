@@ -42,11 +42,13 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: profile.name,
     locale: "en_US",
+    images: [{ url: "/og-image.svg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: `${profile.name} — ${profile.tagline}`,
     description: profile.summary,
+    images: ["/og-image.svg"],
   },
   robots: {
     index: true,

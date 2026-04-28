@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f6f8fb"/>
+  <g transform="translate(72,72)">
+    <rect width="40" height="40" rx="10" fill="#0ea5e9"/>
+    <text x="20" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="18" font-weight="700" letter-spacing="-0.04em" fill="#fff">SK</text>
+    <text x="58" y="28" font-family="system-ui,sans-serif" font-size="22" fill="#475569">Seonho Kim</text>
+  </g>
+  <text x="72" y="380" font-family="system-ui,sans-serif" font-size="72" font-weight="600" letter-spacing="-0.035em" fill="#0f172a">Hi, I'm Seonho.</text>
+  <text x="72" y="440" font-family="system-ui,sans-serif" font-size="40" font-weight="500" letter-spacing="-0.03em" fill="#0f172a">Student researcher &amp; builder turning ideas</text>
+  <text x="72" y="490" font-family="system-ui,sans-serif" font-size="40" font-weight="500" letter-spacing="-0.03em" fill="#0f172a">into real-world impact.</text>
+  <line x1="72" y1="540" x2="1128" y2="540" stroke="rgba(15,23,42,0.08)" stroke-width="1"/>
+  <text x="72" y="575" font-family="system-ui,sans-serif" font-size="20" fill="#64748b">Aspiring Biotechnologist · La Crescenta, CA</text>
+  <text x="1128" y="575" text-anchor="end" font-family="monospace" font-size="20" fill="#64748b">seonhokim04@gmail.com</text>
+</svg>
