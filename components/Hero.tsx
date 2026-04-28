@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, MapPin, Sparkles } from "lucide-react";
+import { ArrowRight, MapPin } from "lucide-react";
 import { profile } from "@/lib/data";
 
 const ease = [0.16, 1, 0.3, 1];
@@ -129,10 +129,6 @@ export function Hero() {
                 <p className="text-sm font-medium text-zinc-900">
                   {profile.name}
                 </p>
-                <div className="inline-flex items-center gap-1.5 rounded-full bg-white/80 px-3 py-1 text-[11px] font-medium text-zinc-700 shadow-sm ring-1 ring-zinc-200/60 backdrop-blur">
-                  <Sparkles className="size-3 text-amber-500" aria-hidden />
-                  Hi! Glad you stopped by.
-                </div>
               </div>
             </div>
 
