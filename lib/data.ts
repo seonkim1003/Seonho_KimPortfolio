@@ -44,7 +44,7 @@ export const aboutIntro = {
   title: "A little more about who I am",
   lead: "[REPLACE] I grew up between two languages, two cultures, and a lot of curiosity. I'm at my happiest when I'm learning something hands-on — pipetting in a lab, walking a tutee through a tricky physics problem, or sketching a study protocol on the back of a notebook.",
   pullQuote:
-    "[REPLACE] I want to be the kind of doctor that kids look forward to seeing.",
+    "I want to be the kind of pediatric nurse that kids look forward to seeing.",
   pullQuoteAttribution: "Future me, hopefully",
 };
 
@@ -162,7 +162,7 @@ export const projects: Project[] = [
     kind: "Website",
     role: "Chief Financial Officer",
     summary:
-      "Mental-health-awareness arm of Next Generation Advocates. Organized youth-led mini-expos that raised $600+ and collected 1,100+ survey responses on teen stressors and coping.",
+      "Mental-health-awareness arm of Next Generation Advocates. Organized youth-led mini-expos that raised $1,000+ and collected 1,100+ survey responses on teen stressors and coping.",
     tags: ["Mental health", "Fundraising", "Survey research"],
     url: "https://homemade-delights.org",
     href: "https://homemade-delights.org",
@@ -243,7 +243,7 @@ export const experience: Experience[] = [
     icon: HeartHandshake,
     bullets: [
       "Promoted mental health awareness through youth-led mini-expos and showcases.",
-      "Raised $600+ for Homemade Delights and $1,200+ for Student Self-Defense Advocates.",
+      "Raised $1,000+ for Homemade Delights and $1,200+ for Student Self-Defense Advocates.",
       "Designed and ran 50+ question surveys, collecting 1,600+ responses and 80,000+ data points across both initiatives.",
     ],
   },
