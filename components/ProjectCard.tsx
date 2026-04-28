@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { accentClasses, type Project } from "@/lib/data";
 import { MotionStaggerItem } from "./MotionFade";
@@ -41,9 +42,23 @@ export function ProjectCard({ project }: Props) {
         />
         <div className="relative flex items-start justify-between gap-4">
           <div
-            className={`inline-flex size-12 items-center justify-center rounded-2xl ${accent.iconBg}`}
+            className={`inline-flex size-12 items-center justify-center rounded-2xl ${accent.iconBg} overflow-hidden`}
           >
-            <Icon className={`size-5 ${accent.iconFg}`} aria-hidden />
+            {project.logo ? (
+              <Image
+                src={project.logo}
+                alt={`${project.title} logo`}
+                width={40}
+                height={40}
+                className="size-10 object-contain"
+              />
+            ) : project.emoji ? (
+              <span className="text-2xl" role="img" aria-label={project.title}>
+                {project.emoji}
+              </span>
+            ) : (
+              <Icon className={`size-5 ${accent.iconFg}`} aria-hidden />
+            )}
           </div>
           <div className="flex items-center gap-2">
             <span className="rounded-full bg-zinc-50 px-2.5 py-1 text-[11px] font-medium uppercase tracking-wide text-zinc-600 ring-1 ring-zinc-200/70">

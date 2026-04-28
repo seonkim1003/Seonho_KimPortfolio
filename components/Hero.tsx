@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, MapPin, Sparkles } from "lucide-react";
 import { profile } from "@/lib/data";
@@ -115,23 +116,20 @@ export function Hero() {
                 className="absolute -bottom-12 -right-10 size-48 rounded-full bg-zinc-100"
               />
 
-              {/* Avatar — replace with a real photo by adding /public/me.jpg
-                  and swapping this block for <Image src="/me.jpg" ... />. */}
-              <div className="relative flex h-full w-full flex-col items-center justify-center gap-4 p-8 text-center">
-                <div className="flex size-28 items-center justify-center rounded-full bg-white/90 shadow-[0_1px_0_0_rgba(255,255,255,0.6)_inset,0_12px_32px_-12px_rgba(0,0,0,0.15)] ring-1 ring-zinc-200/60">
-                  <span className="text-4xl font-semibold tracking-tight text-zinc-800">
-                    {profile.initials}
-                  </span>
-                </div>
-                <div>
-                  <p className="text-sm font-medium text-zinc-900">
-                    {profile.name}
-                  </p>
-                  <p className="mt-0.5 text-xs text-zinc-600">
-                    he/him · {profile.location}
-                  </p>
-                </div>
-                <div className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-white/80 px-3 py-1 text-[11px] font-medium text-zinc-700 shadow-sm ring-1 ring-zinc-200/60">
+              <Image
+                src="/me.png"
+                alt={`Portrait of ${profile.name}`}
+                fill
+                priority
+                className="object-cover object-top"
+                sizes="(max-width: 640px) 90vw, 384px"
+              />
+
+              <div className="absolute inset-x-0 bottom-0 flex flex-col items-center gap-2 bg-gradient-to-t from-white/90 via-white/60 to-transparent px-6 pb-5 pt-16 text-center">
+                <p className="text-sm font-medium text-zinc-900">
+                  {profile.name}
+                </p>
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-white/80 px-3 py-1 text-[11px] font-medium text-zinc-700 shadow-sm ring-1 ring-zinc-200/60 backdrop-blur">
                   <Sparkles className="size-3 text-amber-500" aria-hidden />
                   Hi! Glad you stopped by.
                 </div>

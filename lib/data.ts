@@ -27,7 +27,7 @@ export const profile = {
    * the site — it's what people read first.
    */
   summary:
-    "Hi, I'm Seonho. I'm a high school junior in La Crescenta who loves the slow, careful work of research and the quick joy of helping someone finally understand something hard.",
+    "Hi, I'm Seonho. I'm a high school sophomore in La Crescenta who loves the slow, careful work of research and the quick joy of helping someone finally understand something hard.",
   location: "La Crescenta, CA",
   email: "seonkim1003@gmail.com",
   phone: "818-808-8465",
@@ -94,7 +94,6 @@ export type PersonalFact = {
 export const personalFacts: PersonalFact[] = [
   { question: "Based in", answer: "La Crescenta, CA" },
   { question: "Coffee or tea", answer: "[REPLACE] tea, mostly" },
-  { question: "Currently reading", answer: "[REPLACE] add a book" },
   { question: "Always learning", answer: "ASL, biotech, kindness" },
   { question: "Languages", answer: "EN · KO · ASL" },
   { question: "Top dream", answer: "[REPLACE] pediatric medicine" },
@@ -108,24 +107,19 @@ export type Metric = {
 
 export const metrics: Metric[] = [
   {
-    value: "$1,800+",
+    value: "$2,000+",
     label: "Raised for community initiatives",
     hint: "Across mental health and self-defense expos",
   },
   {
-    value: "1,600+",
+    value: "2,200+",
     label: "Survey respondents",
     hint: "Across two human-subject studies",
   },
   {
-    value: "80,000+",
+    value: "100,000+",
     label: "Individual data points",
     hint: "Cleaned, analyzed, and presented",
-  },
-  {
-    value: "60+",
-    label: "Students presented to",
-    hint: "Seminars, science fairs, SkillsUSA",
   },
 ];
 
@@ -141,6 +135,8 @@ export type Project = {
   url?: string;
   href: string;
   icon: LucideIcon;
+  logo?: string;
+  emoji?: string;
   accent: "sky" | "violet" | "teal" | "amber";
 };
 
@@ -156,6 +152,7 @@ export const projects: Project[] = [
     url: "https://humanityoverAI.org",
     href: "https://humanityoverAI.org",
     icon: HeartHandshake,
+    logo: "/logo-humanityoverai.png",
     accent: "violet",
   },
   {
@@ -169,6 +166,7 @@ export const projects: Project[] = [
     url: "https://homemade-delights.org",
     href: "https://homemade-delights.org",
     icon: Sun,
+    logo: "/logo-homemade-delights.png",
     accent: "amber",
   },
   {
@@ -182,6 +180,7 @@ export const projects: Project[] = [
     url: "https://studentselfdefenseadvocates.org",
     href: "https://studentselfdefenseadvocates.org",
     icon: Users,
+    logo: "/logo-ssda.png",
     accent: "teal",
   },
   {
@@ -194,6 +193,7 @@ export const projects: Project[] = [
     tags: ["Healthcare", "Human-subject research", "Data analysis"],
     href: "#projects",
     icon: Smartphone,
+    emoji: "💊",
     accent: "sky",
   },
 ];

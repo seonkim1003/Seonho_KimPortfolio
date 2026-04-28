@@ -9,14 +9,19 @@ export function ImpactStats() {
       aria-labelledby="impact-heading"
       className="relative"
     >
-      <h2 id="impact-heading" className="sr-only">
-        Impact at a glance
-      </h2>
       <div className="mx-auto w-full max-w-6xl px-6">
+        <div className="mb-6 text-center">
+          <h2 id="impact-heading" className="text-2xl font-semibold tracking-tight text-zinc-900 md:text-3xl">
+            Impact at a glance
+          </h2>
+          <p className="mt-2 text-sm text-zinc-500 md:text-base">
+            Numbers behind the projects, research, and community work.
+          </p>
+        </div>
         <div className="rounded-3xl border border-white/60 bg-white/70 px-6 py-8 shadow-[0_1px_0_0_rgba(255,255,255,0.7)_inset,0_1px_2px_rgba(0,0,0,0.03),0_8px_24px_-12px_rgba(0,0,0,0.06)] backdrop-blur md:px-10 md:py-10">
           <MotionStagger
             as="ul"
-            className="grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-8"
+            className="grid grid-cols-1 gap-6 sm:grid-cols-3 md:gap-8"
           >
             {metrics.map((m) => (
               <MotionStaggerItem

@@ -164,18 +164,6 @@ export function AboutSection() {
           })}
         </MotionStagger>
 
-        {/* Helper note for placeholders */}
-        <MotionFade
-          delay={0.2}
-          className="mt-8 rounded-2xl border border-dashed border-sky-300/70 bg-sky-50/50 px-5 py-4 text-xs text-sky-800/80"
-        >
-          <span className="font-mono font-medium">[draft copy]</span> Every
-          About section block is yours to rewrite — open{" "}
-          <code className="rounded bg-white/70 px-1.5 py-0.5 font-mono text-[11px] text-sky-900">
-            lib/data.ts
-          </code>{" "}
-          and search for the placeholder marker to find each section.
-        </MotionFade>
       </div>
     </section>
   );
