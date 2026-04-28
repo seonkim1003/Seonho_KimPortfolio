@@ -137,6 +137,7 @@ export type Project = {
   icon: LucideIcon;
   logo?: string;
   emoji?: string;
+  image?: string;
   accent: "sky" | "violet" | "teal" | "amber";
 };
 
@@ -194,6 +195,7 @@ export const projects: Project[] = [
     href: "#projects",
     icon: Smartphone,
     emoji: "💊",
+    image: "/research-presentation.png",
     accent: "sky",
   },
 ];
